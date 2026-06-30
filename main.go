@@ -3,26 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	text := "Game Over"
-	score := 111
-
-	fmt.Println(score)
-	fmt.Println(text)
-	text = "Game Paused"
-	score = 50
-
-	fmt.Println(score)
-	fmt.Println(text)
-
-	score = 50 + 10
-	fmt.Println(score)
-
-	score = score + 10
-	fmt.Println(score)
+	fmt.Println("Hello, World!")
+	abc()
+	def(40, 50, 60)
 }
 
-///ВАЖНО! В GoLang очень строгая типизация, и переменная записанная как текст не может быть изменена в число
-///Пример:
-///text:= "Game Over"
-///text=30
-///ЭТО ОШИБКА
+func abc() {
+	a := 10
+	b := 20
+	c := 30
+
+	fmt.Println(a, b, c)
+}
+
+func def(d int, e int, f int) {
+	fmt.Println(d, e, f)
+}
